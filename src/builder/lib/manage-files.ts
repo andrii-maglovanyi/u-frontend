@@ -1,13 +1,17 @@
 import { readdirSync, writeFileSync } from "fs";
 import { resolve } from "path";
 
+export type Asset = {
+  src: string;
+};
+
 export const listFilesByFilter = (dirname: string) => {
-  const assets: string[] = [];
+  const assets: Asset[] = [];
   const filenames = readdirSync(dirname, "utf8");
 
   filenames.forEach(function (filename) {
     if (filename.split(".").pop() === "js") {
-      assets.push(filename);
+      assets.push({ src: filename });
     }
   });
   return assets;

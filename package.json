@@ -13,6 +13,8 @@
   "type": "module",
   "scripts": {
     "build": "webpack",
+    "commit": "npx git-cz",
+    "semantic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -28,6 +30,7 @@
     "@types/react": "^16.9.34",
     "@types/yargs": "^15.0.4",
     "react": "^16.8.0",
+    "semantic-release": "^17.0.7",
     "ts-loader": "^7.0.0",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",

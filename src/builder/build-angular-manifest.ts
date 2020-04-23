@@ -1,9 +1,9 @@
-import { listFilesByFilter, writeFile } from "./lib/manage-files";
+import { listFilesByFilter, writeFile, Asset } from "./lib/manage-files";
 
 import { Options } from "./index";
 
 interface Manifest {
-  scripts?: string[];
+  scripts?: Asset[];
 }
 
 export default ({ source }: Options) => {
